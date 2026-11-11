@@ -1,0 +1,132 @@
+{
+ "encoder": "xeus",
+ "repo": "<repo>/work/wt-before",
+ "audio": "<repo>/work/E1/recordings/so-045s.wav",
+ "samples": 720000,
+ "frames": 2249,
+ "threads": 4,
+ "device": "cpu",
+ "dtype": "float32",
+ "load_seconds": 7.286643862000346,
+ "inference_seconds": 15.574565932998667,
+ "rss_loaded": 2950856704,
+ "hwm_inference": 4119920640,
+ "layers": [
+  {
+   "layer": 0,
+   "rss": 3268739072,
+   "hwm": 4119920640,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 1,
+   "rss": 3268739072,
+   "hwm": 4119920640,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 2,
+   "rss": 3287031808,
+   "hwm": 4119920640,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 3,
+   "rss": 3268739072,
+   "hwm": 4119920640,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 4,
+   "rss": 3342303232,
+   "hwm": 4119920640,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 5,
+   "rss": 3277819904,
+   "hwm": 4119920640,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 6,
+   "rss": 3314798592,
+   "hwm": 4119920640,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 7,
+   "rss": 3305455616,
+   "hwm": 4119920640,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 8,
+   "rss": 3324010496,
+   "hwm": 4119920640,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 9,
+   "rss": 3324010496,
+   "hwm": 4119920640,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 10,
+   "rss": 3351646208,
+   "hwm": 4119920640,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 11,
+   "rss": 3342303232,
+   "hwm": 4119920640,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 12,
+   "rss": 3370070016,
+   "hwm": 4119920640,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 13,
+   "rss": 3388493824,
+   "hwm": 4119920640,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 14,
+   "rss": 3397705728,
+   "hwm": 4119920640,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 15,
+   "rss": 3406917632,
+   "hwm": 4119920640,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 16,
+   "rss": 3416129536,
+   "hwm": 4119920640,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 17,
+   "rss": 3406819328,
+   "hwm": 4119920640,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 18,
+   "rss": 3434430464,
+   "hwm": 4119920640,
+   "retained_attention_bytes": 0
+  }
+ ],
+ "pooled_sha256": "11933e0862f600cef9391bab976215198f9f038abbb6360d9ce8cc81643c6cb0",
+ "logits_sha256": null
+}

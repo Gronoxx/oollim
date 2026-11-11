@@ -1,0 +1,19 @@
+{
+  "transformers_version": "5.19.0",
+  "attn_implementation_effective": "sdpa",
+  "attn_implementation_set_by_adapter": false,
+  "layers": 24,
+  "heads": 16,
+  "hidden": 1024,
+  "attention_class": "Wav2Vec2Attention",
+  "attention_module": "transformers.models.wav2vec2.modeling_wav2vec2",
+  "layer_attn_implementation": "sdpa",
+  "available_attention_functions": [
+    "flash_attention_2",
+    "flash_attention_3",
+    "flash_attention_4",
+    "flex_attention",
+    "paged|eager",
+    "sdpa"
+  ]
+}

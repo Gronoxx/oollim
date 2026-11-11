@@ -1,0 +1,162 @@
+{
+ "encoder": "xlsr",
+ "repo": "<repo>/work/wt-before",
+ "audio": "<repo>/work/E1/recordings/so-060s.wav",
+ "samples": 960000,
+ "frames": 2999,
+ "threads": 4,
+ "device": "cpu",
+ "dtype": "float32",
+ "load_seconds": 4.808154595000815,
+ "inference_seconds": 11.733864784000616,
+ "rss_loaded": 862027776,
+ "hwm_inference": 2882699264,
+ "layers": [
+  {
+   "layer": 0,
+   "rss": 1105358848,
+   "hwm": 2271920128,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 1,
+   "rss": 1167880192,
+   "hwm": 2271920128,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 2,
+   "rss": 1255063552,
+   "hwm": 2271920128,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 3,
+   "rss": 1317679104,
+   "hwm": 2271920128,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 4,
+   "rss": 1404862464,
+   "hwm": 2271920128,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 5,
+   "rss": 1467478016,
+   "hwm": 2271920128,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 6,
+   "rss": 1554661376,
+   "hwm": 2271920128,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 7,
+   "rss": 1617276928,
+   "hwm": 2271920128,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 8,
+   "rss": 1704460288,
+   "hwm": 2271920128,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 9,
+   "rss": 1767075840,
+   "hwm": 2271920128,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 10,
+   "rss": 1854259200,
+   "hwm": 2271920128,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 11,
+   "rss": 1914863616,
+   "hwm": 2271920128,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 12,
+   "rss": 2001960960,
+   "hwm": 2271920128,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 13,
+   "rss": 2064576512,
+   "hwm": 2271920128,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 14,
+   "rss": 2151841792,
+   "hwm": 2271920128,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 15,
+   "rss": 2214375424,
+   "hwm": 2285600768,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 16,
+   "rss": 2301558784,
+   "hwm": 2360369152,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 17,
+   "rss": 2364174336,
+   "hwm": 2435399680,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 18,
+   "rss": 2451357696,
+   "hwm": 2510168064,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 19,
+   "rss": 2513973248,
+   "hwm": 2585198592,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 20,
+   "rss": 2601156608,
+   "hwm": 2659966976,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 21,
+   "rss": 2663772160,
+   "hwm": 2734997504,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 22,
+   "rss": 2750955520,
+   "hwm": 2809839616,
+   "retained_attention_bytes": 0
+  },
+  {
+   "layer": 23,
+   "rss": 2811473920,
+   "hwm": 2882699264,
+   "retained_attention_bytes": 0
+  }
+ ],
+ "pooled_sha256": "c6ee6b95dad943e388d4649f42ce50411e23dcf650f3442630be3e875f1fbbc0",
+ "logits_sha256": null
+}

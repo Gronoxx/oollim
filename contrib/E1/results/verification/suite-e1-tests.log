@@ -1,0 +1,14 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.15, pytest-9.2.0, pluggy-1.7.0 -- <repo>/work/verify/clone/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: <repo>/work/verify/clone
+configfile: pyproject.toml
+plugins: typeguard-4.6.0, anyio-4.16.0
+collecting ... collected 4 items
+
+tests/test_inference_memory.py::test_inference_releases_attention_maps[espnet.nets.pytorch_backend.transformer.attention] PASSED [ 25%]
+tests/test_inference_memory.py::test_inference_releases_attention_maps[pxeus.espnet_import.attention] PASSED [ 50%]
+tests/test_inference_memory.py::test_other_modules_and_attn_submodules_untouched PASSED [ 75%]
+tests/test_inference_memory.py::test_installed_phoneticxeus_attention_is_covered PASSED [100%]
+
+============================== 4 passed in 2.84s ===============================

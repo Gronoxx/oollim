@@ -1,0 +1,18 @@
+<repo>/.venv/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 28374.87it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: <repo>/work/wt-after/speech/resources/xlsr-300m
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+quantizer.codevectors        | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.

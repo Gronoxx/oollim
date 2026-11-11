@@ -1,0 +1,57 @@
+=== essential/memory-leak, version 1.1, start 2026-11-10T16:08:05-03:00 ===
+.....F.F...............................F...............                  [100%]
+=================================== FAILURES ===================================
+______________________ test_nltk_sentence_character_spans ______________________
+
+    def test_nltk_sentence_character_spans():
+        text='Dr. Rose spoke. Please call Stella!'
+>       assert [text[a:b] for a,b in sentence_spans(text)]==['Dr. Rose spoke.','Please call Stella!']
+                                     ^^^^^^^^^^^^^^^^^^^^
+
+tests/test_granular.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = 'Dr. Rose spoke. Please call Stella!'
+
+    def sentence_spans(text):
+        # Deterministic offline Punkt rules; no inference-time resource downloads.
+>       from nltk.tokenize.punkt import PunktParameters, PunktSentenceTokenizer
+E       ModuleNotFoundError: No module named 'nltk'
+
+oollim_app/granular.py:13: ModuleNotFoundError
+_______________ test_pdf_reports_segments_and_escapes_reference ________________
+
+tmp_path = PosixPath('<repo>/work/cache/tmp/pytest-of-user/pytest-1/test_pdf_reports_segments_and_0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f9fc175fe10>
+
+    def test_pdf_reports_segments_and_escapes_reference(tmp_path,monkeypatch):
+>       from PySide6.QtWidgets import QApplication
+E       ModuleNotFoundError: No module named 'PySide6'
+
+tests/test_granular.py:30: ModuleNotFoundError
+______________ test_leaders_include_all_ties_and_match_manuscript ______________
+
+tmp_path = PosixPath('<repo>/work/cache/tmp/pytest-of-user/pytest-1/test_leaders_include_all_ties_0')
+
+    def test_leaders_include_all_ties_and_match_manuscript(tmp_path):
+     from reproduce.leader_tables import render
+     render(ROOT/'results/four-ridges-v1/external-all-conditions.csv',tmp_path)
+     import csv
+     rows=list(csv.DictReader((tmp_path/'leaders.csv').open()))
+     assert len(rows)==15
+>    assert (tmp_path/'leader-table-rows.tex').read_text().strip() in (ROOT/'paper/main.tex').read_text()
+E    AssertionError: assert 'Accuracy & \\textbf{Human consensus} & -- & \\textbf{0.809} & [0.769, 0.842] & \\textbf{0.704} & [0.663, 0.743]\\\\\n....911] & 0.446 & [0.409, 0.479]\\\\\n & koreanocean & H & 0.840 & [0.802, 0.872] & \\textbf{0.675} & [0.632, 0.712]\\\\' in '\\documentclass[cameraready]{Interspeech}\n\\usepackage{microtype,array}\n\\title{Expert L2 English Speech Evaluation...t Scores. \\textit{Journal of Educational Measurement}, 50(1):1--73, 2013.}\n\\end{thebibliography}\n\\end{document}\n'
+E     +  where 'Accuracy & \\textbf{Human consensus} & -- & \\textbf{0.809} & [0.769, 0.842] & \\textbf{0.704} & [0.663, 0.743]\\\\\n....911] & 0.446 & [0.409, 0.479]\\\\\n & koreanocean & H & 0.840 & [0.802, 0.872] & \\textbf{0.675} & [0.632, 0.712]\\\\' = <built-in method strip of str object at 0x55d4c3ffb450>()
+E     +    where <built-in method strip of str object at 0x55d4c3ffb450> = 'Accuracy & \\textbf{Human consensus} & -- & \\textbf{0.809} & [0.769, 0.842] & \\textbf{0.704} & [0.663, 0.743]\\\\\n...11] & 0.446 & [0.409, 0.479]\\\\\n & koreanocean & H & 0.840 & [0.802, 0.872] & \\textbf{0.675} & [0.632, 0.712]\\\\\n'.strip
+E     +      where 'Accuracy & \\textbf{Human consensus} & -- & \\textbf{0.809} & [0.769, 0.842] & \\textbf{0.704} & [0.663, 0.743]\\\\\n...11] & 0.446 & [0.409, 0.479]\\\\\n & koreanocean & H & 0.840 & [0.802, 0.872] & \\textbf{0.675} & [0.632, 0.712]\\\\\n' = read_text()
+E     +        where read_text = (PosixPath('<repo>/work/cache/tmp/pytest-of-user/pytest-1/test_leaders_include_all_ties_0') / 'leader-table-rows.tex').read_text
+E     +  and   '\\documentclass[cameraready]{Interspeech}\n\\usepackage{microtype,array}\n\\title{Expert L2 English Speech Evaluation...t Scores. \\textit{Journal of Educational Measurement}, 50(1):1--73, 2013.}\n\\end{thebibliography}\n\\end{document}\n' = read_text()
+E     +    where read_text = (PosixPath('<repo>/work/verify/clone') / 'paper/main.tex').read_text
+
+tests/test_reproduction_release.py:53: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_granular.py::test_nltk_sentence_character_spans - ModuleNot...
+FAILED tests/test_granular.py::test_pdf_reports_segments_and_escapes_reference
+FAILED tests/test_reproduction_release.py::test_leaders_include_all_ties_and_match_manuscript
+3 failed, 52 passed in 17.39s
+=== essential/memory-leak, version 1.1, end 2026-11-10T16:08:28-03:00 exit=1 ===

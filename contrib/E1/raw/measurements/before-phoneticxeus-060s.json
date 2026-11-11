@@ -1,0 +1,132 @@
+{
+ "encoder": "phoneticxeus",
+ "repo": "<repo>/work/wt-before",
+ "audio": "<repo>/work/E1/recordings/so-060s.wav",
+ "samples": 960000,
+ "frames": 2999,
+ "threads": 4,
+ "device": "cpu",
+ "dtype": "float32",
+ "load_seconds": 8.302448647998972,
+ "inference_seconds": 22.616386427998805,
+ "rss_loaded": 3056037888,
+ "hwm_inference": 9669640192,
+ "layers": [
+  {
+   "layer": 0,
+   "rss": 3555434496,
+   "hwm": 4446953472,
+   "retained_attention_bytes": 287808032
+  },
+  {
+   "layer": 1,
+   "rss": 3855527936,
+   "hwm": 4730605568,
+   "retained_attention_bytes": 575616064
+  },
+  {
+   "layer": 2,
+   "rss": 4180189184,
+   "hwm": 5006237696,
+   "retained_attention_bytes": 863424096
+  },
+  {
+   "layer": 3,
+   "rss": 4406579200,
+   "hwm": 5331013632,
+   "retained_attention_bytes": 1151232128
+  },
+  {
+   "layer": 4,
+   "rss": 4706672640,
+   "hwm": 5581815808,
+   "retained_attention_bytes": 1439040160
+  },
+  {
+   "layer": 5,
+   "rss": 5055901696,
+   "hwm": 5881499648,
+   "retained_attention_bytes": 1726848192
+  },
+  {
+   "layer": 6,
+   "rss": 5343711232,
+   "hwm": 6206304256,
+   "retained_attention_bytes": 2014656224
+  },
+  {
+   "layer": 7,
+   "rss": 5668241408,
+   "hwm": 6493941760,
+   "retained_attention_bytes": 2302464256
+  },
+  {
+   "layer": 8,
+   "rss": 5943767040,
+   "hwm": 6744969216,
+   "retained_attention_bytes": 2590272288
+  },
+  {
+   "layer": 9,
+   "rss": 6194831360,
+   "hwm": 7094239232,
+   "retained_attention_bytes": 2878080320
+  },
+  {
+   "layer": 10,
+   "rss": 6482640896,
+   "hwm": 7345569792,
+   "retained_attention_bytes": 3165888352
+  },
+  {
+   "layer": 11,
+   "rss": 6795018240,
+   "hwm": 7633117184,
+   "retained_attention_bytes": 3453696384
+  },
+  {
+   "layer": 12,
+   "rss": 7095111680,
+   "hwm": 7945347072,
+   "retained_attention_bytes": 3741504416
+  },
+  {
+   "layer": 13,
+   "rss": 7444209664,
+   "hwm": 8245800960,
+   "retained_attention_bytes": 4029312448
+  },
+  {
+   "layer": 14,
+   "rss": 7732019200,
+   "hwm": 8594792448,
+   "retained_attention_bytes": 4317120480
+  },
+  {
+   "layer": 15,
+   "rss": 7995260928,
+   "hwm": 8784580608,
+   "retained_attention_bytes": 4604928512
+  },
+  {
+   "layer": 16,
+   "rss": 8245612544,
+   "hwm": 9109381120,
+   "retained_attention_bytes": 4892736544
+  },
+  {
+   "layer": 17,
+   "rss": 8518615040,
+   "hwm": 9308438528,
+   "retained_attention_bytes": 5180544576
+  },
+  {
+   "layer": 18,
+   "rss": 8806838272,
+   "hwm": 9669640192,
+   "retained_attention_bytes": 5468352608
+  }
+ ],
+ "pooled_sha256": "b45c2162bdf184f6f9a4bda5441201eea9a11b52f8fc8692fa7cc19af3d959cc",
+ "logits_sha256": "f47943e6514cd57ca4063618acadfe263111b4d23ee3d6bcc0ab241a14ff9d5e"
+}

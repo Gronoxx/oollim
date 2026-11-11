@@ -1,0 +1,56 @@
+{
+  "essential/memory-leak": {
+    "added": [
+      "contrib/E1/README.md",
+      "contrib/E1/compare.py",
+      "contrib/E1/make_recordings.py",
+      "contrib/E1/measure.py",
+      "contrib/E1/results/FINDINGS.md",
+      "contrib/E1/results/PHASES.md",
+      "contrib/E1/results/PROTOCOL.md",
+      "contrib/E1/results/TEST_SUITE.md",
+      "contrib/E1/results/VERIFICATION.md",
+      "contrib/E1/results/verification/check_diffs.py",
+      "contrib/E1/results/verification/diff-check.json",
+      "contrib/E1/results/verification/suite-e1-tests.log",
+      "contrib/E1/results/verification/suite-essential-dataset-audit.log",
+      "contrib/E1/results/verification/suite-essential-memory-leak.log",
+      "contrib/E1/results/verification/suite-main.log",
+      "contrib/E1/score.py",
+      "tests/test_inference_memory.py"
+    ],
+    "modified": [
+      "speech/pronunciation/inference_memory.py"
+    ],
+    "deleted": [],
+    "undeclared": [],
+    "provenance_files_touched": [],
+    "release_files_modified_expected": [
+      "speech/pronunciation/inference_memory.py"
+    ],
+    "verdict": "only declared files"
+  },
+  "essential/dataset-audit": {
+    "added": [
+      "contrib/E2/AUDIT.md",
+      "contrib/E2/README.md",
+      "contrib/E2/checksums.txt",
+      "contrib/E2/upstream-models.md"
+    ],
+    "modified": [],
+    "deleted": [],
+    "undeclared": [],
+    "provenance_files_touched": [],
+    "release_files_modified_expected": [],
+    "verdict": "only declared files"
+  },
+  "all_branches_clean": true,
+  "provenance_files_checked": [
+    "encoders.py",
+    "scoring.py",
+    "phonetic.py",
+    "audio.py",
+    "phone_features.py",
+    "text_reference.py"
+  ]
+}
